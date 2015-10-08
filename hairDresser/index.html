@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hairdresser | Mirko</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			<a class="navbar-brand" href="#">Hairdresser Mirko</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse float-right" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="#">Home</a></li>
+					<li><a href="#section1">Kaj nudimo</a></li>
+					<li><a href="#section2">Naroči se</a></li>
+					<li><a href="#section3">FAQ</a></li>
+					<li><a href="#section4">O nas</a></li>
+				</ul>
+				<form class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>	
+			</div>
+		<!-- /.navbar-collapse -->
+		</div>
+	<!-- /.container -->
+	</nav>
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img src="http://blog.tapsley.com/wp-content/uploads/2013/10/hairdressers.jpg" alt="Chania">
+			</div>
+
+			<div class="item">
+				<img src="http://www.nhc.ac.uk/portals/0/Images/news/Jan15/HairListicle4.jpg" alt="Chania">
+			</div>
+
+			<div class="item">
+				<img src="img_flower.jpg" alt="Flower">
+			</div>
+
+			<div class="item">
+				<img src="img_flower2.jpg" alt="Flower">
+			</div>
+		</div>
+
+		<!-- Left and right controls -->
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+		</a>
+	</div>
+	<div class="container">
+		<div class="content">
+			<div class="divider" id="section1"><hr></div>	
+			<div  class="row">
+				<div>
+					<h1 class="center-text">Kaj nudimo</h1>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="http://static.coco.sensis.com.au/20120518t092003n00f0116/Hairdressers_300x185.jpg" alt="...">
+						<div class="caption">
+							<h3>Nega las</h3>
+							<p>...</p>
+							<p><a href="#" class="btn btn-default" role="button">Button</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQ75joWTEDsu5jls222ABQ_2EVVfH0cVNP0wG0CW9Vou_0XpjyNQ" alt="...">
+						<div class="caption">
+							<h3>Barvanje</h3>
+							<p>...</p>
+							<p> <a href="#" class="btn btn-default" role="button">Button</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="http://hh2010.org/wp-content/uploads/2015/09/Hairdresser.jpg" alt="...">
+						<div class="caption">
+							<h3>Striženje</h3>
+							<p>...</p>
+							<p><a href="#" class="btn btn-default" role="button">Button</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="divider" id="section2"><hr></div>
+			<div class="row">
+				<div class="">
+						<h1 class="center-text">Naroči se</h1>
+				</div>
+				<div class="col-md-5 form-margin">
+					<div class="form-group">
+						<input type="text" class="form-control" id="usr" placeholder="Ime in priimek: Jane Doe">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="" placeholder="Telefonska: 00386 1 48 48 48">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="" placeholder="Termin: Torek 15.00">
+					</div>
+					<div class="form-group">
+						<textarea class="form-control" rows="5" id="comment" placeholder="Ostalo..."></textarea>
+					</div>	
+					<div class="checkbox">
+						<label>
+							<input type="checkbox"> Strinjam se, da je Mirko najboljši frizer!
+						</label>
+					</div>
+					<button type="submit" class="btn btn-default">Naroči se!</button>	
+				</div>		
+
+				<div class="col-md-5 tb-margin">
+					<div class="table-responsive">
+						<table class="table table-bordered">
+							<tr>
+								<th>Dan</th>
+								<th>Delovne Ure</th>
+							</tr>
+							<tr>
+								<td>Ponedeljek</td>
+								<td>8.00-16.00</td>
+							</tr>
+							<tr>
+								<td>Torek</td>
+								<td>10.00-18.00</td>
+							</tr>
+							<tr>
+								<td>Sreda</td>
+								<td>8.00-16.00</td>
+							</tr>
+							<tr>
+								<td>Četrtek</td>
+								<td>8.00-16.00</td>
+							</tr>
+							<tr>
+								<td>Petek</td>
+								<td>12.00-20.00</td>
+							</tr>
+							<tr>
+								<td>Sobota</td>
+								<td>8.00-16.00</td>
+							</tr>
+							<tr>
+								<td>Nedelja</td>
+								<td>8.00-12.00</td>
+							</tr>		
+						</table>
+					</div>
+					<span>* Ob praznikhi velja nedeljski urnik!</span>
+				</div>
+			</div>
+			<div class="divider" id="section3"><hr></div>
+			<div class="row">
+				<div class="col-md-8 col-centered">
+					<div>
+						<h1 class="center-text">FAQ (pogosta vprašanja)</h1>
+					</div>
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									Kakšen je salon in ekipa?
+									</a>
+								</h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+									Salon je prostoren in domač. V njem delajo prijazne in sposobne frizerke, ki oblikujejo pričesko z občutkom in domišljijo.<br /><br />
+									Smo relativno mlad kolektiv, vedno nasmejani, prijazni. Imamo dolgoletne izkušnje s profesionalno lasno kozmetiko Schwarzkopf. V dogovoru z dolgoletnim partnerjem Hair Beauty d.o.o. smo letos septembra začeli delati z profesionalno lasno kozmetiko Indola, katero oni distribuirajo.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingTwo">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									Ali sprejemate hišnje ljubljenčke?
+									</a>
+								</h4>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+								<div class="panel-body">
+								...
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingThree">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									Imate kakšne nagrade s tekmovanj?
+									</a>
+								</h4>
+							</div>
+							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+								<div class="panel-body">
+								...
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="divider" id="section4"><hr></div>
+			<div class="row">
+				<h1 class="text-center">Contacts</h1>
+				<div class="col-md-3 contact">
+					<address>
+						<strong>Nika Grabnar</strong><br>
+						795 Folsom Ave, Suite 600<br>
+						San Francisco, CA 94107<br>
+						<abbr title="Phone">P:</abbr> (123) 456-7890
+						<a href="mailto:#">nika.grabnar@gmail.com</a>
+					</address>
+				</div>
+				<div class="col-md-3 map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22152.564367846076!2d14.50903315!3d46.0496911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47652d633629a6c3%3A0x456af8c761337564!2sCenter%2C+1000!5e0!3m2!1ssl!2ssi!4v1442398575229" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				<div class="col-md-3 nav-bottom  float-right">
+					<ul class="nav nav-stacked">
+						<li><strong>Navigacija</strong></li>
+						<li><a href="#">Home</a></li>
+						<li><a href="#section1">Kaj nudimo</a></li>
+						<li><a href="#section2">Naroči se</a></li>
+						<li><a href="#section3">FAQ</a></li>
+						<li><a href="#section4">O nas</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p class="text-center">&copy; Nika Grabnar 2015</p>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
