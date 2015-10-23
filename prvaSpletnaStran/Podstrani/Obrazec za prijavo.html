@@ -1,0 +1,121 @@
+﻿<html>
+	<head>
+		<title>Obrazec za prijavo</title>
+  		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="../CSS/Oblika.css"/>
+		
+		<script language="javascript" type="text/javascript">
+			function pomembnost ()
+			{
+				document.getElementById("p1").style.color="grey";
+				document.getElementById("p2").style.color="grey";
+				document.getElementById("p3").style.color="grey";
+				document.getElementById("p4").style.color="grey";
+				document.getElementById("p5").style.color="grey";
+				document.getElementById("p6").style.color="grey";
+				document.getElementById("p7").style.color="grey";
+				document.getElementById("p8").style.color="grey";
+			}
+			
+
+			function validate()
+			{
+			   if( document.obrazec.ime.value == "" )
+			   {
+				 alert( "Prosim vpišite ime!" );
+				 document.obrazec.ime.focus() ;
+				 return false;
+			   }
+			   if( document.obrazec.priimek.value == "" )
+			   {
+				 alert( "Prosim vpišite priimek!" );
+				 document.obrazec.priimek.focus() ;
+				 return false;
+			   }
+			   if( document.obrazec.email.value == "" )
+			   {
+				 alert( "Prosim vpišite vašo elektronsko pošto!" );
+				 document.obrazec.email.focus() ;
+				 return false;
+			   }
+			   if( document.obrazec.telefon.value == "" )
+			   {
+				 alert( "Prosim vnesite telefonsko številko!" );
+				 document.obrazec.telefon.focus() ;
+				 return false;
+			   }
+
+			   if( document.obrazec.treningi.value == "-1" )
+			   {
+				 alert( "Prosim izberite katere treninge želite obiskovati!" );
+				 return false;
+			   }
+			   return( true );
+			}
+
+		</script>
+	</head>
+	<body>
+		<table >
+			<tr>
+				<td class="stran" valign="top">
+					<a class="hip" href="../index.html"><img src="../Slike/swimming.jpg" class="Logo"></a>
+					<blockquote>
+							<ul id="menu">
+								<li><a href="../index.html">Domov</a></li>
+								<li><a href="Galerija.html">Galerija slik</a></li>
+								<li><a href="Kontakti.html">Kontakti</a></li>
+								<li><a href="Obrazec za prijavo.html">Obrazec za prijavo</a></li>
+								<li><a href="Koristne povezave.html">Koristne povezave</a></li>
+								<li><a href="../PHP/Rekordi.php">Rekordi</a></li>	
+							</ul>
+						
+						<form method=GET action="http://www.google.com/search">
+							<table>
+								<tr>
+									<td>
+										<a class="hip" href="http://www.google.com/"><img src="http://www.google.com/logos/Logo_40wht.gif"></a><br/>
+										<input type=text name=vnos size=31 value="Išči...">
+										<input type=submit name=pošlji value="Išči">
+									</td>
+								</tr>
+							</table>
+						</form><br/>
+					</blockquote>  
+				</td>
+				<td valign="top">
+				<h1>Prijavnica za plavalne tečaje:</h1>
+				<form action="../PHP/Validacija.php" name="obrazec" method="post" onsubmit="return(validate());">
+				   <p id="p1" onmouseover="pomembnost();" ><label>Ime: <input required name=ime></label></p>
+				   <p id="p2"><label>Priimek: <input required name=priimek></label></p>
+				   <p id="p3" ><label>Spol:<br />  
+							<input type="radio" name="spol" value="M" checked="yes" /> Moški<br />
+							<input type="radio" name="spol" value="Z" /> Ženski<br />
+					</label></p>
+					<p id="p4" ><label>Datum rojstva:<input name=datum required type=date></label></p>
+					<p id="p5" ><label>Telefon:<input name=telefon type=tel required placeholder="(xxx) xxx xxx"></label></p>
+					<p id="p6" >
+						<label>Naslov:<br/>
+							<textarea rows="5" cols="30" required name="naslov"> Vpišite svoj naslov </textarea>
+						</label> 
+					</p>
+					<br/>
+					<p id="p7" ><label>E-mail: <input type=email required autofocus=on name=email></label></p>
+				   
+					<p id="p8" ><label>Želim se izpopolniti v: <br />
+					<select name="treningi">
+					   <option value="-1" selected>[izberi treninge]</option>
+					   <option name="trenerja" value="trenerja">Trenerja</option>
+					   <option value="vaditelja">Vaditelja</option>
+					   <option value="učitelja">Učitelja</option>
+					  <option value="tekmovalca">Tekmovalca</option>
+					</select>
+					</label></p>
+				   <p><label>Komentar:<textarea name=komentar ></textarea></label></p>
+				   <p><input type=submit value="Pošlji"></p>
+				</form>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

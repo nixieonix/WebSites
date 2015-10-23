@@ -1,0 +1,67 @@
+﻿<html>
+	<head>
+		<title>Galerija slik</title>
+  		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="../CSS/Oblika.css"/>
+		
+		<script language="javascript" type="text/javascript">
+			function menjaj_src(a)  
+			{
+				slika="../Slike/Galerija/xfoto" + a + ".jpg"
+				document.getElementById("menjaj").setAttribute("src",slika)
+			}
+		</script>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td class="stran" valign="top">
+					<a class="hip" href="../index.html"><img src="../Slike/swimming.jpg" class="Logo"></a>
+					<blockquote>
+							<ul id="menu">
+								<li><a href="../index.html">Domov</a></li>
+								<li><a href="Galerija.html">Galerija slik</a></li>
+								<li><a href="Kontakti.html">Kontakti</a></li>
+								<li><a href="Obrazec za prijavo.html">Obrazec za prijavo</a></li>
+								<li><a href="Koristne povezave.html">Koristne povezave</a></li>
+								<li><a href="../PHP/Rekordi.php">Rekordi</a></li>	
+							</ul>
+						
+						<form method=GET action="http://www.google.com/search">
+							<table>
+								<tr>
+									<td>
+										<a class="hip" href="http://www.google.com/"><img src="http://www.google.com/logos/Logo_40wht.gif"></a><br/>
+										<input type=text name=vnos size=31 value="Išči...">
+										<input type=submit name=pošlji value="Išči">
+									</td>
+								</tr>
+							</table>
+						</form><br/>
+					</blockquote> 
+				</td>
+				<td>
+					<h1>Galerija</h1>
+					<p>
+						<img class="vecja" src="../Slike/Galerija/foto0.jpg" id="menjaj" alt="menjaj!" />
+					</p>
+
+					<p>
+						<img class="majhne" src="../Slike/Galerija/xfoto0.jpg" onclick="menjaj_src(0)" alt="Zamenjaj sliko!" />
+						<img class="majhne" src="../Slike/Galerija/xfoto1.jpg" onclick="menjaj_src(1)" alt="Zamenjaj sliko!" />
+						<img class="majhne" src="../Slike/Galerija/xfoto2.jpg" onclick="menjaj_src(2)" alt="Zamenjaj sliko!" />
+						<img class="majhne" src="../Slike/Galerija/xfoto3.jpg" onclick="menjaj_src(3)" alt="Zamenjaj sliko!" />
+						<img class="majhne" src="../Slike/Galerija/xfoto4.jpg" onclick="menjaj_src(4)" alt="Zamenjaj sliko!" />
+						<img class="majhne" src="../Slike/Galerija/xfoto5.jpg" onclick="menjaj_src(5)" alt="Zamenjaj sliko!" />
+						<img class="majhne" src="../Slike/Galerija/xfoto6.jpg" onclick="menjaj_src(6)" alt="Zamenjaj sliko!" />
+						<img class="majhne" src="../Slike/Galerija/xfoto7.jpg" onclick="menjaj_src(7)" alt="Zamenjaj sliko!" /><br/>
+						<img class="majhne" src="../Slike/Galerija/xfoto8.jpg" onclick="menjaj_src(8)" alt="Zamenjaj sliko!" />
+						<img class="majhne" src="../Slike/Galerija/xfoto9.jpg" onclick="menjaj_src(9)" alt="Zamenjaj sliko!" />
+						<img class="majhne" src="../Slike/Galerija/xfoto10.jpg" onclick="menjaj_src(10)" alt="Zamenjaj sliko!" />
+					</p>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
+

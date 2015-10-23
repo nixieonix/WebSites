@@ -1,0 +1,123 @@
+<html>
+	<head>
+		<title>Plavanje</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="CSS/Oblika.css"/>
+		<script language="javascript" type="text/javascript">
+		//skopirano iz www.smrkec.com
+			expireDate = new Date
+			expireDate.setMonth(expireDate.getMonth()+6)
+			jcount = eval(cookieVal("jaafarCounter"))
+			jcount++
+			document.cookie = "jaafarCounter="+jcount+";expires=" + expireDate.toGMTString()
+
+			function cookieVal(cookieName) 
+			{
+				thisCookie = document.cookie.split("; ")
+				for (i=0; i<thisCookie.length; i++)
+				{
+					if (cookieName == thisCookie[i].split("=")[0])
+					{
+						return thisCookie[i].split("=")[1]
+					}
+				}
+				return 0
+			}
+
+			function page_counter()
+			{
+				for (i=0;i<(7-jcount.toString().length);i++)
+				document.write('<span class="counter">0</span>')
+				for (y=0;y<(jcount.toString().length);y++)
+				document.write('<span class="counter">'+jcount.toString().charAt(y)+'</span>')
+			}
+			
+		</script>	
+		
+		<script src="Zunanje knjižnice/jQuery.js" type="text/javascript"></script>
+		<script language="javascript" type="text/javascript">
+			$(document).ready(function()
+			{
+				$('p#drugi').hide();
+				$('a#paragraphAnchor').click(function()
+				{
+					$('p#drugi').slideDown('medium') //show
+				})
+			});
+		</script>
+			
+		
+	</head>
+	<body>
+		
+		<table>
+			<tr>
+			<!--	 <img src="Slike/plavanje.png" class="naslov">  -->
+			</tr>
+			<tr>
+				<td class="stran" valign="top">
+					<img src="Slike/swimming.jpg" class="Logo">
+					<blockquote>
+							<ul id="menu">
+								<li><a href="index.html">Domov</a></li>
+								<li><a href="Podstrani/Galerija.html">Galerija slik</a></li>
+								<li><a href="Podstrani/Kontakti.html">Kontakti</a></li>
+								<li><a href="Podstrani/Obrazec za prijavo.html">Obrazec za prijavo</a></li>
+								<li><a href="Podstrani/Koristne povezave.html">Koristne povezave</a></li>
+								<li><a href="PHP/Rekordi.php">Rekordi</a></li>	
+							</ul>
+
+						<form method=GET action="http://www.google.com/search" >
+							<table>
+								
+								<tr>
+									<td>
+										<a class="hip" href="http://www.google.com/"><img src="http://www.google.com/logos/Logo_40wht.gif"></a><br/>
+										<input type=text name=vnos size=31 value="Išči..." onkeyup="search(this.value);">
+										<input type=submit name=pošlji value="Išči">
+									</td>
+								</tr>
+							</table>
+						</form><br/>
+					</blockquote> 
+					
+				</td>
+				<td>
+					<img src="Slike/plavanje.png" class="naslov">
+					<br/>
+					<p>Plavanje sicer ni telovadba s prenašanjem teže kot tek, saj teže ne prenaša telovadec ampak voda, vendar ima plavanje prednosti. 
+					Plavanje je idealna aerobična dejavnost. Zmanjšuje stres, ohranja telesno gibčnost, izboljšuje ves organizem. Pol ure plavnja nam 
+					zagotavlja odlično telovadbo celega telesa. Plavanje na veliko področjih presega druge aerobične telovadbe na suhem. Med plavanjem 
+					hitreje porabljamo kalorije kakor pri hoji in kolesarjenju pa tudi hitreje kot pri neaerobnih dejavnostih, kakršne so smučanje, tenis... 
+					Plavanje krepi celo telo in vsako mišico. Običajno uspešno krepi mišice zgornjega dela telesa. Največje prednosti: zelo malo je 
+					možnosti za kakršnekoli poškodbe. Sklepi, kosti in mišice niso močno obremenjene, to pa pri drugih športih ni mogoče. Pri plavanju bomo 
+					lažje vztrajali dlje časa, če od časa do časa zamenjamo slog. Pričnemo, na primer, s prostim slogom, potem pa počivamo med kakim bolj 
+					umirjenim plavanjem, tako da bomo lahko plavali neprekinjeno pol ure in več. Svojo odvečno težo boste izgubljali nekoliko počasneje kot 
+					pri teku, saj se pri plavanju mišice bolj okrepijo. Toda to nikakor ne pomeni, da ne bomo porabili maščob. Sicer pa imajo za večino ljudi 
+					plavalci najlepše postave. Tako da je plavanje ena najboljših aerobičnih vaj.</p>
+					<hr>
+					<h2>Zgodovina plavanja</h2>
+					<p id="drugi">Prvo plavanje se je pojavilo že v daljni zgodovini. Najprej je bilo plavanje v jezerih in rekah, šele kasneje se je plavanje pojavilo tudi v 
+					takrat zgrajenih bazenih. 31. avgusta 1957 je bil zgrajen prvi bazen v Celju. Seveda pa se je tudi tekmovalo. Bilo je nekaj pomembnih ljudi, 
+					ki so dosegli prav neverjetne dosežke za tisti čas.<br/>
+					Gertrude Ederle se je odločila, da bo leta 1926 preplavala Rokavski preliv. Takrat je bila stara 17 let. To je bila prva ženska, ki se je 
+					odločila za ta podvig, imela pa je tudi druge svetovne dosežke že, ko je bila stara 12 let.<br/>
+					Benoit Lecomte je bil prvi, ki je leta 1998 preplaval Atlantik.</p>
+					<a href="#" id="paragraphAnchor" >Beri dalje...</a>
+					<hr>
+					<h3>Phelps 200-meter delfin Svetovni Rekord</h3>
+					<p>
+						<iframe width="420" height="315" src="http://www.youtube.com/embed/XlXuJP_9DjA" frameborder="0" allowfullscreen></iframe>
+					</p>
+					<br/>
+					<br/>
+					<SCRIPT>page_counter(jcount);</SCRIPT>
+
+					
+				</td>
+				
+			</tr>
+		</table>
+		<!--<style type="text/css">body {background-image:url(http://www.infoservemedia.com/design/resources/backgrounds/photos/u8n1z51f26.jpg);background-attachment:fixed;}.bkgspc {margin-top:10px;font-size:11px;font-family:Arial;}.bkgspc </style><div class="bkgspc" align="center"> Visit InfoServe for <a href="http://www.infoservemedia.com/design/resources/backgrounds/" target="_blank">backgrounds</a> or to <a href="http://www.infoservemedia.com/design/DIY/" rel="nofollow">create a website</a>.</div>-->
+	</body>
+</html>
