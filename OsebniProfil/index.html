@@ -1,0 +1,263 @@
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title></title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="functions.js"></script>
+
+
+	<link rel="icon" type="image/ico" href="media/favicon.ico"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<body data-spy="scroll" data-target="#coverr-navbar" data-offset="100">
+
+<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#home">Nika Grabnar</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#o_meni">O meni</a></li>
+        <li><a href="#CV">CV</a></li>
+        <li><a href="#reference">Reference</a></li>
+        <li><a href="#kontakt">Kontakti</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+         <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div id="home" class="homepage-hero-module hidden-xs" style="padding: 0; margin-bottom: 0;">
+	<div class="video-container">
+		<!--<div class="ph-alert ph-special">
+			<img src="media/product-hunt.png" width="100" height="100" alt=""/>
+			<strong>Special Hunters Promo:</strong> 2 video sequences, edited just for you!
+			<button type="button" class="close ph-close" aria-label="Close">
+				<span aria-hidden="true"><i class="fa fa-times"></i></span>
+			</button>
+		</div>-->
+
+		<div class="share-buttons-group affix-top">
+			<a href="#" target="_blank" class="btn-track" data-event="TwitterShare_Click">
+				<div id="twitter-button" class="share-button-banner">
+					<div class="share-container">
+						<i class="fa fa-twitter share-content"></i>
+					</div>
+				</div>
+			</a>
+			<a href="#" target="_blank" class="btn-track" data-event="FacebookShare_Click">
+				<div id="facebook-button" class="share-button-banner">
+					<div class="share-container">
+						<i class="fa fa-facebook share-content"></i>
+					</div>
+				</div>
+			</a>
+
+			<a href="#" target="_blank" class="btn-track" data-event="GoogleShare_Click">
+				<div id="google-button" class="share-button-banner">
+					<div class="share-container">
+						<i class="fa fa-google-plus share-content"></i>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		
+
+        <div class="title-container">
+            <div class="headline">
+                <h1 class="text-white">Hello world!</h1>
+                <h3 class="text-thin">I'm Nika Grabnar</h3>
+                <h4 class="text-thin">and I'm a web developer.</h4>
+            </div>
+
+            <!--<div class="text-center" id="loadBannerVideoSpinner" style="background-color: rgba(0, 0, 0, 0.5); padding: 10px; border-radius: 4px; display: inline-block; margin-top: 20px;">
+                <h5 class="text-thin text-primary">Loading Coverr... <i class="fa fa-circle-o-notch fa-spin"></i></h5>
+            </div>-->
+        </div>
+
+			<div class="filter"></div>
+
+			<video autoplay loop class="fillWidth">
+				<source src="img/Hello-World.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+				<source src="img/Hello-World.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+			</video>
+			<div class="poster hidden">
+				<img src="img/Hello-World.jpg" alt="">
+			</div>
+
+        <div style="position: absolute; bottom: 20px; left: 50%; margin-left: -19px;">
+            <a class="coverr-nav-item" href="#o_meni" style="text-decoration: none;">
+                <h1 class="text-white">
+                    <i class="fa fa-angle-down"></i>
+                </h1>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="jumbotron " style="padding:25px;" >
+	<div id="o_meni" class="container context">
+		<h2 class="text-center" style="padding: 15px 0;">O meni</h2>
+		<div class="text">
+		<p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at massa a enim viverra ultrices et non enim. Nunc tempor, erat quis malesuada tincidunt, est urna placerat mi, id ornare erat augue suscipit ex. Phasellus semper neque eget tincidunt condimentum. Phasellus pharetra orci ac tortor convallis gravida. Mauris non auctor eros. Sed et libero leo. Fusce nunc nunc, feugiat vehicula cursus ut, luctus eu lacus. Proin et ligula dolor. Nam quis ullamcorper diam, sit amet rhoncus risus. Cras rhoncus ante lorem, at blandit felis aliquam non. Mauris laoreet vitae urna sit amet maximus.</p>
+
+		<p>Sed tristique nec libero in vehicula. Proin cursus eget ligula vitae faucibus. Duis hendrerit convallis neque ac fermentum. Ut et est in lectus dignissim tristique a quis augue. Morbi sodales neque diam, id vehicula ligula vehicula eu. Mauris feugiat tincidunt sollicitudin. Proin laoreet rutrum leo in tempor. Sed eget bibendum dui, in aliquam lacus. Donec eu nibh porttitor dui volutpat tincidunt. Morbi aliquet tempor aliquet. Vivamus viverra, ipsum vitae porttitor pretium, lacus nibh hendrerit magna, sed auctor risus lorem a justo. Etiam facilisis faucibus urna, consequat facilisis libero varius sollicitudin. Nulla cursus, mauris sed congue aliquet, leo lectus vehicula enim, quis pulvinar enim sapien ultrices velit. Sed in mauris porta, dictum nisi sed, eleifend urna. Fusce cursus non mauris nec cursus.</p>
+
+		<p>Ut ut diam quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec a rutrum tellus. Sed ultrices arcu quis urna tempor dignissim. Vivamus efficitur pellentesque ligula eget eleifend. Nam magna quam, interdum eget nisl eget, scelerisque sagittis purus. Ut accumsan odio ac rutrum facilisis. Proin commodo justo eu mi blandit, quis finibus justo lacinia. Proin in facilisis dui.</p>
+
+		<p>Nunc eget tincidunt nunc. Sed eget fermentum nunc. Aliquam scelerisque est aliquam bibendum vestibulum. Curabitur eget velit et sapien malesuada iaculis. In nec quam et diam tempus pellentesque vitae in leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi fringilla, ex et hendrerit tristique, lorem risus cursus nisi, euismod semper purus nisi vel arcu. Aliquam ex urna, fermentum sed ornare at, laoreet id tellus. Curabitur non tellus sit amet tortor tincidunt condimentum. Ut accumsan aliquet risus, eget rutrum diam scelerisque in. Vivamus nec venenatis quam, vel consequat elit.</p>
+
+		<p>Morbi ac ipsum dapibus risus rutrum convallis. Vivamus id imperdiet nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus et tortor consequat, mollis arcu gravida, eleifend urna. Quisque lobortis id purus quis sollicitudin. Ut eleifend risus ut ultricies tincidunt. Aliquam eleifend mattis ante vel euismod. Integer pulvinar accumsan tristique. Nulla sagittis mi quam, a tempor felis rhoncus vel. Proin ut nisi vel arcu aliquet gravida id vel erat. Nulla varius velit quis mi convallis, eu gravida enim venenatis. Etiam pulvinar bibendum mattis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla consectetur nibh non augue egestas sodales sit amet eu odio. Sed tincidunt justo ut purus eleifend, euismod blandit felis laoreet.</p>
+		<br />
+		<br />
+		</div>
+	</div>	
+</div>
+<div id="CV" class="container context">
+    <h2 class="text-center" style="padding: 15px 0;">CV</h2>
+	
+	<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at massa a enim viverra ultrices et non enim. Nunc tempor, erat quis malesuada tincidunt, est urna placerat mi, id ornare erat augue suscipit ex. Phasellus semper neque eget tincidunt condimentum. Phasellus pharetra orci ac tortor convallis gravida. Mauris non auctor eros. Sed et libero leo. Fusce nunc nunc, feugiat vehicula cursus ut, luctus eu lacus. Proin et ligula dolor. Nam quis ullamcorper diam, sit amet rhoncus risus. Cras rhoncus ante lorem, at blandit felis aliquam non. Mauris laoreet vitae urna sit amet maximus.
+	<br />
+	<br />
+	Sed tristique nec libero in vehicula. Proin cursus eget ligula vitae faucibus. Duis hendrerit convallis neque ac fermentum. Ut et est in lectus dignissim tristique a quis augue. Morbi sodales neque diam, id vehicula ligula vehicula eu. Mauris feugiat tincidunt sollicitudin. Proin laoreet rutrum leo in tempor. Sed eget bibendum dui, in aliquam lacus. Donec eu nibh porttitor dui volutpat tincidunt. Morbi aliquet tempor aliquet. Vivamus viverra, ipsum vitae porttitor pretium, lacus nibh hendrerit magna, sed auctor risus lorem a justo. Etiam facilisis faucibus urna, consequat facilisis libero varius sollicitudin. Nulla cursus, mauris sed congue aliquet, leo lectus vehicula enim, quis pulvinar enim sapien ultrices velit. Sed in mauris porta, dictum nisi sed, eleifend urna. Fusce cursus non mauris nec cursus.
+	<br />
+	<br />
+	Ut ut diam quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec a rutrum tellus. Sed ultrices arcu quis urna tempor dignissim. Vivamus efficitur pellentesque ligula eget eleifend. Nam magna quam, interdum eget nisl eget, scelerisque sagittis purus. Ut accumsan odio ac rutrum facilisis. Proin commodo justo eu mi blandit, quis finibus justo lacinia. Proin in facilisis dui.
+	<br />
+	<br />
+	Nunc eget tincidunt nunc. Sed eget fermentum nunc. Aliquam scelerisque est aliquam bibendum vestibulum. Curabitur eget velit et sapien malesuada iaculis. In nec quam et diam tempus pellentesque vitae in leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi fringilla, ex et hendrerit tristique, lorem risus cursus nisi, euismod semper purus nisi vel arcu. Aliquam ex urna, fermentum sed ornare at, laoreet id tellus. Curabitur non tellus sit amet tortor tincidunt condimentum. Ut accumsan aliquet risus, eget rutrum diam scelerisque in. Vivamus nec venenatis quam, vel consequat elit.
+	<br />
+	<br />
+	Morbi ac ipsum dapibus risus rutrum convallis. Vivamus id imperdiet nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus et tortor consequat, mollis arcu gravida, eleifend urna. Quisque lobortis id purus quis sollicitudin. Ut eleifend risus ut ultricies tincidunt. Aliquam eleifend mattis ante vel euismod. Integer pulvinar accumsan tristique. Nulla sagittis mi quam, a tempor felis rhoncus vel. Proin ut nisi vel arcu aliquet gravida id vel erat. Nulla varius velit quis mi convallis, eu gravida enim venenatis. Etiam pulvinar bibendum mattis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla consectetur nibh non augue egestas sodales sit amet eu odio. Sed tincidunt justo ut purus eleifend, euismod blandit felis laoreet.</p>
+	<br />
+	<br />
+</div>
+<hr style="margin-top: 0;"/>
+<div  id="reference" class="container context">
+    <h2 class="text-center" style="padding: 15px 0;">Reference</h2>
+
+	<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at massa a enim viverra ultrices et non enim. Nunc tempor, erat quis malesuada tincidunt, est urna placerat mi, id ornare erat augue suscipit ex. Phasellus semper neque eget tincidunt condimentum. Phasellus pharetra orci ac tortor convallis gravida. Mauris non auctor eros. Sed et libero leo. Fusce nunc nunc, feugiat vehicula cursus ut, luctus eu lacus. Proin et ligula dolor. Nam quis ullamcorper diam, sit amet rhoncus risus. Cras rhoncus ante lorem, at blandit felis aliquam non. Mauris laoreet vitae urna sit amet maximus.</p>
+	<br />
+	<div class="row">
+		<div class="col-sm-6 col-md-4">
+			<div class="thumbnail">
+				<img src="..." alt="...">
+				<div class="caption">
+					<h3>Thumbnail label</h3>
+					<p>...</p>
+					<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-6 col-md-4">
+			<div class="thumbnail">
+				<img src="..." alt="...">
+				<div class="caption">
+					<h3>Thumbnail label</h3>
+					<p>...</p>
+					<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-6 col-md-4">
+			<div class="thumbnail">
+				<img src="..." alt="...">
+				<div class="caption">
+					<h3>Thumbnail label</h3>
+					<p>...</p>
+					<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<hr style="margin-top: 0;"/>
+<div id="kontakt" class="container context">
+    <h2 class="text-center" style="padding: 15px 0;">Kontakti</h2>
+
+	<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at massa a enim viverra ultrices et non enim. Nunc tempor, erat quis malesuada tincidunt, est urna placerat mi, id ornare erat augue suscipit ex. Phasellus semper neque eget tincidunt condimentum. Phasellus pharetra orci ac tortor convallis gravida. Mauris non auctor eros. Sed et libero leo. Fusce nunc nunc, feugiat vehicula cursus ut, luctus eu lacus. Proin et ligula dolor. Nam quis ullamcorper diam, sit amet rhoncus risus. Cras rhoncus ante lorem, at blandit felis aliquam non. Mauris laoreet vitae urna sit amet maximus.
+	<br />
+	<br />
+	Sed tristique nec libero in vehicula. Proin cursus eget ligula vitae faucibus. Duis hendrerit convallis neque ac fermentum. Ut et est in lectus dignissim tristique a quis augue. Morbi sodales neque diam, id vehicula ligula vehicula eu. Mauris feugiat tincidunt sollicitudin. Proin laoreet rutrum leo in tempor. Sed eget bibendum dui, in aliquam lacus. Donec eu nibh porttitor dui volutpat tincidunt. Morbi aliquet tempor aliquet. Vivamus viverra, ipsum vitae porttitor pretium, lacus nibh hendrerit magna, sed auctor risus lorem a justo. Etiam facilisis faucibus urna, consequat facilisis libero varius sollicitudin. Nulla cursus, mauris sed congue aliquet, leo lectus vehicula enim, quis pulvinar enim sapien ultrices velit. Sed in mauris porta, dictum nisi sed, eleifend urna. Fusce cursus non mauris nec cursus.
+	<br />
+	<br />
+	Ut ut diam quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec a rutrum tellus. Sed ultrices arcu quis urna tempor dignissim. Vivamus efficitur pellentesque ligula eget eleifend. Nam magna quam, interdum eget nisl eget, scelerisque sagittis purus. Ut accumsan odio ac rutrum facilisis. Proin commodo justo eu mi blandit, quis finibus justo lacinia. Proin in facilisis dui.
+	<br />
+	<br />
+	Nunc eget tincidunt nunc. Sed eget fermentum nunc. Aliquam scelerisque est aliquam bibendum vestibulum. Curabitur eget velit et sapien malesuada iaculis. In nec quam et diam tempus pellentesque vitae in leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi fringilla, ex et hendrerit tristique, lorem risus cursus nisi, euismod semper purus nisi vel arcu. Aliquam ex urna, fermentum sed ornare at, laoreet id tellus. Curabitur non tellus sit amet tortor tincidunt condimentum. Ut accumsan aliquet risus, eget rutrum diam scelerisque in. Vivamus nec venenatis quam, vel consequat elit.
+	<br />
+	<br />
+	Morbi ac ipsum dapibus risus rutrum convallis. Vivamus id imperdiet nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus et tortor consequat, mollis arcu gravida, eleifend urna. Quisque lobortis id purus quis sollicitudin. Ut eleifend risus ut ultricies tincidunt. Aliquam eleifend mattis ante vel euismod. Integer pulvinar accumsan tristique. Nulla sagittis mi quam, a tempor felis rhoncus vel. Proin ut nisi vel arcu aliquet gravida id vel erat. Nulla varius velit quis mi convallis, eu gravida enim venenatis. Etiam pulvinar bibendum mattis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla consectetur nibh non augue egestas sodales sit amet eu odio. Sed tincidunt justo ut purus eleifend, euismod blandit felis laoreet.</p>
+	<br />
+	<br />
+</div>
+<hr style="margin-top: 0;"/>
+<footer style="padding: 20px 0;">
+    <p class="lead text-center" style="margin-bottom: 10px;">Mdeade with <i class="fa fa-heart heart-color"></i> by Nika Grabnar!
+    </p>
+
+    <div class="text-center">
+        <p style="margin-bottom: 0; text-align: center;">Follow me:</p>
+        <a href="#" target="_blank" style="text-decoration: none;">
+            <div class="follow-button-banner" id="facebook-follow-button">
+                <div class="follow-container">
+                    <i class="follow-content fa fa-facebook"></i>
+                </div>
+            </div>
+        </a>
+        <a href="#" target="_blank" style="text-decoration: none;">
+            <div class="follow-button-banner" id="twitter-follow-button">
+                <div class="follow-container">
+                    <i class="follow-content fa fa-twitter"></i>
+                </div>
+            </div>
+        </a>
+        <a href="#" target="_blank" style="text-decoration: none;">
+            <div class="follow-button-banner" id="instagram-follow-button">
+                <div class="follow-container">
+                    <i class="follow-content fa fa-instagram"></i>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <p class="text-center">&copy; Nika Grabnar 2015</p>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>
