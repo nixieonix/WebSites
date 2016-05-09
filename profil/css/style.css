@@ -214,9 +214,15 @@ body{
 }
 #contact{
 	padding:50px 0;
+
 	min-height: 700px;
 	color:#fff;
+	font-size: 15px;
 	background-color: #009688;
+}
+
+#contact a{
+	color: white;
 }
 
 footer{
